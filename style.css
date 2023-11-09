@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #153677, #4e085f);
+}
+
+.todoApp {
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+}
+
+.todoApp h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.todoApp i {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.row {
+    width: 100%;
+    background-color: #edeef0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.row input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.row button {
+    border: none;
+    outline: none;
+    background-color: #ff5945;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 8px 12px 30px;
+}
+
+ul li::before {
+    position: absolute;
+    content: "\f111";
+    font-family: "Font Awesome 6 Free";
+    color: #ff5945; 
+    margin-right: 10px;
+    left: 5px;
+    top: 15px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: "\f058"; 
+    font-family: "Font Awesome 6 Free"; 
+    color: #ff5945; 
+    margin-right: 0.5em; 
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+ul li span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    right: 25px;
+    top: 15px;
+    background-color: #555;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background-color: #ff5945;
+}
