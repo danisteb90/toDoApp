@@ -122,3 +122,32 @@ ul li span {
 ul li span:hover {
     background-color: #ff5945;
 }
+
+@media (max-width: 400px){
+    .todoApp {
+        max-width: 300px;
+    }
+    
+    .row {
+        flex-direction: column;
+        background-color: transparent;
+    }
+
+    .row input {
+        background-color: #edeef0;
+        border-radius: 30px;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .row button {
+        padding: 10px;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+
+    ul li span {
+        right: 5px;
+    }
+}
